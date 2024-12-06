@@ -2,9 +2,10 @@
   "name": "app.js",
   "version": "1.0.0",
   "description": "This is a expense calculation app on the basis of daily , weekly, monthly",
-  "main": "./src/index.js",
+  "main": "./src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
   },
   "author": "Firoz Ansari",
   "license": "ISC",
@@ -12,7 +13,7 @@
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.3",
     "cookie-parser": "^1.4.7",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
     "express-session": "^1.18.1",

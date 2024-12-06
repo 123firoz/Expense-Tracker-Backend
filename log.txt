@@ -1,0 +1,18 @@
+
+Date      : 2024-12-06, 
+Time      : 17:05:58, 
+IP Address: ::1, 
+Method    : POST, 
+Path      : /create-expense
+
+Date      : 2024-12-06, 
+Time      : 17:11:01, 
+IP Address: ::1, 
+Method    : POST, 
+Path      : /create-categories
+
+Date      : 2024-12-06, 
+Time      : 17:11:32, 
+IP Address: ::1, 
+Method    : POST, 
+Path      : /create-categories
