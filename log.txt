@@ -16,3 +16,21 @@ Time      : 17:11:32,
 IP Address: ::1, 
 Method    : POST, 
 Path      : /create-categories
+
+Date      : 2025-03-19, 
+Time      : 10:01:06, 
+IP Address: ::ffff:127.0.0.1, 
+Method    : GET, 
+Path      : /signup
+
+Date      : 2025-03-19, 
+Time      : 10:04:03, 
+IP Address: ::ffff:127.0.0.1, 
+Method    : POST, 
+Path      : /signup
+
+Date      : 2025-03-19, 
+Time      : 10:06:01, 
+IP Address: ::ffff:127.0.0.1, 
+Method    : GET, 
+Path      : /login

@@ -27,8 +27,8 @@ const authenticateUser = (req, res, next) => {
     }
 
     try {
-        const decoded = jwt.verify(token, 'secreetKey'); // Replace 'secreetKey' with your secret key
-        req.user = decoded; // Attach user data to the request object for further use
+        const decoded = jwt.verify(token, 'secreetKey'); 
+        req.user = decoded; 
         next();
     } catch (err) {
         res.status(401).send('Unauthorized: Invalid or expired token');
@@ -38,7 +38,7 @@ const authenticateUser = (req, res, next) => {
 // app.use(authenticateUser);
 
 
-app.get('/',(req,res)=>{
+app.get('/',authenticateUser,(req,res)=>{
     res.render('index')
 })
 
@@ -89,6 +89,10 @@ app.get('/logout', (req, res) => {
     res.cookie('token', '', { maxAge: 0 }); // Clear the cookie by setting maxAge to 0
     res.send({message:"User logout successfully.."})
 });
+
+function isLoggedIn(req,res,next){
+   
+}
 
 // CREATE A CATEGORY 
 app.post('/create-categories', async (req, res) => {
